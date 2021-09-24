@@ -1,0 +1,23 @@
+-- Create Brewery table
+CREATE TABLE brewery (
+	brewery_id int PRIMARY KEY,
+	brewery_name VARCHAR
+	);
+--Create Beer table
+Create table beer(
+	beer_id int primary key,
+	brewery_id int,
+	beer_name varchar,
+	beer_style varchar,
+	beer_abv int
+	)
+--Create Reviews Table
+Create table reviews(
+	beer_id int,
+	brewery_id int,
+	review_overall int,
+	review_aroma int,
+	review_appearance int,
+	review_palate int,
+	review_taste int
+)
